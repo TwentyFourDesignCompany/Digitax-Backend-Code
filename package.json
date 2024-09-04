@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --scripts-prepend-node-path index.js",
+    "start": "node index.js",
     "dev":"nodemon index.js"
   },
   "keywords": [],
