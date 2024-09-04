@@ -1,0 +1,17 @@
+---
+# Define the project settings
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/digitax/public_html/
+    - echo "Starting deployment..."
+
+    # Step 1: Navigate to the deployment directory
+    - cd $DEPLOYPATH || exit 1
+
+    # Step 2: Install Node.js dependencies
+    - npm install --production
+
+    # Step 4: Restart the Node.js application
+    - pm2 restart all
+
+    - echo "Deployment completed successfully."
