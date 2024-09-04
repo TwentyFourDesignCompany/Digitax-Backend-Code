@@ -3,7 +3,9 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/digitax/public_html/
+    - /bin/cp -R . $DEPLOYPATH
     - echo "Starting deployment..."
+
 
     # Step 1: Navigate to the deployment directory
     - cd $DEPLOYPATH || exit 1
