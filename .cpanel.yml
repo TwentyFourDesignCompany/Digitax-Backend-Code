@@ -2,7 +2,7 @@
 # Define the project settings
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/digiadmin/public_html/digitax
+    - export DEPLOYPATH=/home/digiadmin/api.digitaxgroup.tax
     - /bin/cp -R . $DEPLOYPATH
     - echo "Starting deployment..."
 
